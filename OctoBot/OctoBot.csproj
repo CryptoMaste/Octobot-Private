@@ -1,0 +1,64 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+	<PropertyGroup>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CompareNETObjects" Version="4.65.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.2" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+    <PackageReference Include="Serilog" Version="2.9.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OctoBot.Assets\OctoBot.Assets.csproj" />
+    <ProjectReference Include="..\OctoBot.Core\OctoBot.Core.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.DipAnalyserStrategyEvaluator\OctoBot.Tentacles.DipAnalyserStrategyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.ForumEvaluator\OctoBot.Tentacles.ForumEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.HighFrequencyStrategyEvaluator\OctoBot.Tentacles.HighFrequencyStrategyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators\OctoBot.Tentacles.InDevelopmentRealTimeEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentSocialEvaluators\OctoBot.Tentacles.InDevelopmentSocialEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InDevelopmentTAEvaluators\OctoBot.Tentacles.InDevelopmentTAEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.InstantFluctuationsEvaluator\OctoBot.Tentacles.InstantFluctuationsEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.MarketMakingStartegyEvaluator\OctoBot.Tentacles.MarketMakingStartegyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.MarketStabilityStrategyEvaluator\OctoBot.Tentacles.MarketStabilityStrategyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.MixedStrategiesEvaluator\OctoBot.Tentacles.MixedStrategiesEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.MomentumTAEvaluator\OctoBot.Tentacles.MomentumTAEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.MoveSignalsStrategyEvaluator\OctoBot.Tentacles.MoveSignalsStrategyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.NewsEvaluator\OctoBot.Tentacles.NewsEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.OverallStateAnalysis\OctoBot.Tentacles.OverallStateAnalysis.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.PatternAnalysis\OctoBot.Tentacles.PatternAnalysis.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.PriceRefresherEvaluator\OctoBot.Tentacles.PriceRefresherEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.SignalEvaluators\OctoBot.Tentacles.SignalEvaluators.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.StaggeredOrdersStrategyEvaluator\OctoBot.Tentacles.StaggeredOrdersStrategyEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatisticsAnalysis\OctoBot.Tentacles.StatisticsAnalysis.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.StatsEvaluator\OctoBot.Tentacles.StatsEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.TextAnalysis\OctoBot.Tentacles.TextAnalysis.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendAnalysis\OctoBot.Tentacles.TrendAnalysis.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.TrendTAEvaluator\OctoBot.Tentacles.TrendTAEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\OctoBot.Tentacles.VolatilityTAEvaluator\OctoBot.Tentacles.VolatilityTAEvaluator.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DailyTradingMode\OctoBot.Tentacles.DailyTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.DipAnalyserTradingMode\OctoBot.Tentacles.DipAnalyserTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HighFrequencyTradingMode\OctoBot.Tentacles.HighFrequencyTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.HybridTradingMode\OctoBot.Tentacles.HybridTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.InvestorTradingMode\OctoBot.Tentacles.InvestorTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.MarketMakerTradingMode\OctoBot.Tentacles.MarketMakerTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.ObjectiveTradingMode\OctoBot.Tentacles.ObjectiveTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.OpportunityTradingMode\OctoBot.Tentacles.OpportunityTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SafeProfitTradingMode\OctoBot.Tentacles.SafeProfitTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.SignalTradingMode\OctoBot.Tentacles.SignalTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Libs\TradingModes\OctoBot.Tentacles.StaggeredOrdersTradingMode\OctoBot.Tentacles.StaggeredOrdersTradingMode.csproj" />
+    <ProjectReference Include="..\OctoBot.Tentacles.Manager\OctoBot.Tentacles.Manager.csproj" />
+    <ProjectReference Include="..\Python Libs\ArgParse\ArgParse.csproj" />
+  </ItemGroup>
+
+</Project>
